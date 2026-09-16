@@ -1,4 +1,7 @@
 # GenesisX
+
+[![License: CERN-OHL-S-2.0](https://img.shields.io/badge/License-CERN--OHL--S--2.0-blue.svg)](LICENSE)
+
 **License:** CERN-OHL-S-2.0  
 **Author:** phantom-ascii (Year 10 Maker)  
 **Project Goal:** Build an open-source 2-in-1 Linux laptop completely from scratch (custom motherboard, chassis, cooling, keyboard, power system, and firmware).
@@ -43,32 +46,31 @@ One of my long-term goals is to become a Hack Club Gappie, and I'm using project
 ---
 ## Rough BOM Estimates
 *Note: These are early placeholder estimates and will change as component selection and sponsorships are finalized.*
-
-| Category | Part | Qty | Estimated Cost |
+| Category | Part | Qty | Estimated Cost (USD) |
 | :--- | :--- | :--- | :--- |
-| Compute | LattePanda Mu Ultra Module (Core Ultra 5/7) | 1 | £450–£550 ($599+) |
-| Storage | 2TB M.2 NVMe SSD (PCIe 4.0) | 1 | £90–£130 |
-| Display | 13–14" 16:10 OLED touchscreen (eDP) | 1 | £150–£250 |
-| Pen | Active pen + digitizer/controller | 1 | £50–£120 |
-| Wi-Fi / Bluetooth | Wi-Fi 6E/7 M.2 module | 1 | £20–£40 |
-| Motherboard | Custom 6–8 layer carrier PCB | 1 | £80–£150 |
-| Power | USB-C PD controller & charging circuitry | 1 | £20–£40 |
-| Battery | 60–70Wh custom battery pack | 1 | £50–£80 |
-| Keyboard | Custom keyboard PCB, switches & keycaps | 1 | £40–70 |
-| Trackpad | Glass trackpad + controller | 1 | £30–60 |
-| Wireless | Bluetooth MCU + antenna (for detached mode) | 1 | £5–15 |
-| Pogo connector | Keyboard dock connection set | 1 set | £5–15 |
-| Ports | USB-C, USB-A, HDMI, microSD, 3.5mm | 1 set | £10–25 |
-| Speakers | Laptop stereo speakers | 2 | £10–20 |
-| Cooling | Heatsink, copper heatpipe & slim fan | 1 | £30–60 |
-| Hinge | 360° hinge assembly | 2 | £30–70 |
-| Chassis | Aluminium / 3D-printed enclosure | 1 | £80–150 |
-| Miscellaneous | Screws, cables, antennas, thermal pads, etc. | — | £50–100 |
+| Compute | LattePanda Mu Ultra Module (Core Ultra 5/7) | 1 | $605–$740 ($599+ base) |
+| Storage | 2TB M.2 NVMe SSD (PCIe 4.0) | 1 | $120–$175 |
+| Display | 13–14" 16:10 OLED touchscreen (eDP) | 1 | $200–$335 |
+| Pen | Active pen + digitizer/controller | 1 | $65–$160 |
+| Wi-Fi / Bluetooth | Wi-Fi 6E/7 M.2 module | 1 | $25–$55 |
+| Motherboard | Custom 6–8 layer carrier PCB | 1 | $110–$200 |
+| Power | USB-C PD controller & charging circuitry | 1 | $25–$55 |
+| Battery | 60–70Wh custom battery pack | 1 | $65–$110 |
+| Keyboard | Custom keyboard PCB, switches & keycaps | 1 | $55–$95 |
+| Trackpad | Glass trackpad + controller | 1 | $40–$80 |
+| Wireless | Bluetooth MCU + antenna (for detached mode) | 1 | $7–$20 |
+| Pogo connector | Keyboard dock connection set | 1 set | $7–$20 |
+| Ports | USB-C, USB-A, HDMI, microSD, 3.5mm | 1 set | $13–$35 |
+| Speakers | Laptop stereo speakers | 2 | $13–$27 |
+| Cooling | Heatsink, copper heatpipe & slim fan | 1 | $40–$80 |
+| Hinge | 360° hinge assembly | 2 | $40–$95 |
+| Chassis | Aluminium / 3D-printed enclosure | 1 | $110–$200 |
+| Miscellaneous | Screws, cables, antennas, thermal pads, etc. | — | $65–$135 |
 
-### Estimated Totals
-* **Lower Estimate:** ~£1,250
-* **Higher Estimate:** ~£1,950
-* **Working Budget Target:** ~£1,500 *(leveraging educational sponsorships from partners like LattePanda, JLCPCB, and NextPCB)*
+### Estimated Totals (USD)
+* **Lower Estimate:** ~$1,685
+* **Higher Estimate:** ~$2,625
+* **Working Budget Target:** ~$2,020 *(leveraging educational sponsorships from partners like LattePanda, JLCPCB, and NextPCB)*
 ---
 ## License
 Hardware designs, schematics, CAD files, and documentation are licensed under the **CERN-OHL-S-2.0** (CERN Open Hardware Licence v2 - Strongly Reciprocal).
