@@ -1,69 +1,74 @@
 # GenesisX
-
-[![License: CERN-OHL-S-2.0](https://img.shields.io/badge/License-CERN--OHL--S--2.0-blue.svg)](LICENSE)
-
-GenesisX is an open-source 2-in-1 laptop that I'm designing from scratch. The plan is to make a Linux laptop with a custom motherboard, OLED touchscreen, 360° hinge, detachable wireless keyboard and active pen support.
-
-## Why I started this
-
-I wanted to build something that was actually challenging instead of just putting together existing modules. GenesisX is mainly a learning project where I can work on PCB design, CAD, embedded systems, power, cooling, firmware and Linux.
-
-## About me
-
-I'm **phantom-ascii**, a student interested in hardware, Linux, programming and CAD. I've worked on smaller PCB and hardware projects before, but GenesisX is a much bigger step up.
-
-One of my longer-term goals is to become a **Hack Club Gappie**, and I'm using projects like this to build up the skills and experience to get there.
-
-## Progress
-
-Currently working on the system architecture, component research, motherboard design and mechanical design.
-
-This repo will contain the designs, CAD, documentation and other files as the project develops.
-
-
-## GenesisX Rough BOM
-
-This is an early estimate and will change as the design develops. Prices are rough and mainly here to give an idea of the overall cost.
+**License:** CERN-OHL-S-2.0  
+**Author:** phantom-ascii (Year 10 Maker)  
+**Project Goal:** Build an open-source 2-in-1 Linux laptop completely from scratch (custom motherboard, chassis, cooling, keyboard, power system, and firmware).
+---
+## Overview
+GenesisX is an open-source 2-in-1 Linux laptop designed from scratch. Instead of just putting existing parts together into an off-the-shelf shell, the goal is to engineer a proper, high-performance laptop. 
+The core compute platform is powered by the **LattePanda Mu Ultra** (Intel Lunar Lake Core Ultra 5/7 module), offering desktop-class x86 performance, incredible integrated graphics (Intel Arc), and an integrated NPU, all while sharing the same compact 69.6 × 60 mm form factor.
+### Target Specs
+* **Compute Module:** LattePanda Mu Ultra (Intel Core Ultra 5 226V / Core Ultra 7 256V, 8C/8T, up to 4.8 GHz)
+* **Memory:** 16GB LPDDR5X-8533 soldered on-package (with up to 11.6GB shared VRAM allocation)
+* **Display:** 13–14" 16:10 OLED touchscreen (2.5K–3K, 90–120Hz) via native eDP
+* **Storage:** 2TB M.2 NVMe SSD (PCIe 4.0 lanes)
+* **Form Factor:** 360° hinge (laptop, tablet, tent, and stand modes) using Framework-style hinge geometry
+* **Input:** Detachable wireless keyboard and glass trackpad (Bluetooth LE + pogo pins for docking/charging)
+* **Battery & Power:** ~60–70Wh battery pack with 100W USB-C PD fast charging
+* **Connectivity:** Wi-Fi 6E/7 module built into the laptop body
+* **I/O:** 2× USB-C, USB-A, HDMI, microSD, 3.5mm audio jack
+* **Cooling:** Custom active cooling solution (copper heat pipe + slim blower fan) designed for a 37W TDP target
+* **Chassis:** Aluminium / 3D-printed custom enclosure
+* **Target Weight & Thickness:** ~1.3–1.5kg | ~17–20mm
+---
+## Why I Started This
+I wanted to build something genuinely challenging rather than taking the easy route. GenesisX serves as a massive hands-on learning project to dive deep into:
+* Advanced PCB design (custom 6–8 layer carrier board in KiCad)
+* Mechanical CAD (Onshape / FreeCAD)
+* Embedded systems, power delivery, and battery management
+* Thermal engineering and custom cooling
+* Firmware and Linux system integration
+One of my long-term goals is to become a Hack Club Gappie, and I'm using projects like GenesisX to build the engineering skills and execution track record to get there.
+---
+## Roadmap
+1. **Architecture & Research:** Finalize system architecture, component research, and interface mapping.
+2. **Component Selection:** Lock down display panels, power management ICs, and the LattePanda Mu Ultra platform.
+3. **Bill of Materials (BOM):** Build and refine the complete component list.
+4. **Schematic Design:** Capture the carrier board schematic in KiCad.
+5. **PCB Layout:** Route the 6–8 layer motherboard ensuring signal integrity for PCIe 4.0 and eDP.
+6. **Mechanical CAD:** Design the chassis, 360° hinge brackets, and thermal modules in Onshape.
+7. **Peripherals:** Design the detachable keyboard PCB, switches, trackpad, and pogo-pin dock.
+8. **Review & Verification:** Perform schematic checks (ERC) and design rule checks (DRC).
+9. **Documentation & Sponsorships:** Polish open-source documentation and coordinate part sourcing/sponsorships (LattePanda, JLCPCB, NextPCB, etc.).
+10. **Build & Test:** Submit designs, order parts through Hack Club, assemble, and flash firmware.
+---
+## Rough BOM Estimates
+*Note: These are early placeholder estimates and will change as component selection and sponsorships are finalized.*
 
 | Category | Part | Qty | Estimated Cost |
-|---|---|---:|---:|
-| Compute | High-end compute module / SOM | 1 | £150–300 |
-| Storage | 2TB M.2 NVMe SSD | 1 | £90–130 |
-| Display | 13–14" 16:10 OLED touchscreen, 2.5K–3K, 90–120Hz | 1 | £150–250 |
-| Pen | Active pen + digitizer/controller | 1 | £50–120 |
-| Wi-Fi / Bluetooth | Wi-Fi 6E/7 module | 1 | £20–40 |
-| Motherboard | Custom 6–8 layer PCB | 1 | £80–150 |
-| Power | USB-C PD + charging circuitry | 1 | £20–40 |
-| Battery | 60–70Wh battery pack | 1 | £50–80 |
-| Keyboard | Custom keyboard PCB, switches and keycaps | 1 | £40–70 |
+| :--- | :--- | :--- | :--- |
+| Compute | LattePanda Mu Ultra Module (Core Ultra 5/7) | 1 | £450–£550 ($599+) |
+| Storage | 2TB M.2 NVMe SSD (PCIe 4.0) | 1 | £90–£130 |
+| Display | 13–14" 16:10 OLED touchscreen (eDP) | 1 | £150–£250 |
+| Pen | Active pen + digitizer/controller | 1 | £50–£120 |
+| Wi-Fi / Bluetooth | Wi-Fi 6E/7 M.2 module | 1 | £20–£40 |
+| Motherboard | Custom 6–8 layer carrier PCB | 1 | £80–£150 |
+| Power | USB-C PD controller & charging circuitry | 1 | £20–£40 |
+| Battery | 60–70Wh custom battery pack | 1 | £50–£80 |
+| Keyboard | Custom keyboard PCB, switches & keycaps | 1 | £40–70 |
 | Trackpad | Glass trackpad + controller | 1 | £30–60 |
-| Wireless | Bluetooth MCU + antenna | 1 | £5–15 |
-| Pogo connector | Keyboard connection | 1 set | £5–15 |
+| Wireless | Bluetooth MCU + antenna (for detached mode) | 1 | £5–15 |
+| Pogo connector | Keyboard dock connection set | 1 set | £5–15 |
 | Ports | USB-C, USB-A, HDMI, microSD, 3.5mm | 1 set | £10–25 |
-| Speakers | Laptop speakers | 2 | £10–20 |
-| Cooling | Heatsink, heatpipe and fan | 1 | £30–60 |
-| Hinge | Custom 360° hinge assembly | 2 | £30–70 |
-| Chassis | Aluminium / 3D-printed chassis | 1 | £80–150 |
+| Speakers | Laptop stereo speakers | 2 | £10–20 |
+| Cooling | Heatsink, copper heatpipe & slim fan | 1 | £30–60 |
+| Hinge | 360° hinge assembly | 2 | £30–70 |
+| Chassis | Aluminium / 3D-printed enclosure | 1 | £80–150 |
 | Miscellaneous | Screws, cables, antennas, thermal pads, etc. | — | £50–100 |
 
-## Estimated Totals
-
-| Estimate | Cost |
-|---|---:|
-| Lower estimate | ~£950 |
-| Higher estimate | ~£1,650 |
-| Working budget | ~£1,200 |
-
-### Notes
-
-- These are rough estimates, not final component prices.
-- The compute module is currently the biggest unknown and will affect the motherboard, cooling and power design.
-- Display prices can vary significantly depending on availability and panel specifications.
-- Custom PCB costs depend on board size, layer count, quantity and manufacturer.
-- Mechanical costs will depend on whether the final chassis is 3D printed, CNC machined or a combination of both.
-- The keyboard is detachable and wireless, but the main laptop contains the compute, storage, battery, networking and I/O.
-- Parts will be replaced with exact manufacturers and part numbers as the design progresses.
-
+### Estimated Totals
+* **Lower Estimate:** ~£1,250
+* **Higher Estimate:** ~£1,950
+* **Working Budget Target:** ~£1,500 *(leveraging educational sponsorships from partners like LattePanda, JLCPCB, and NextPCB)*
+---
 ## License
-
-Hardware designs are licensed under **CERN-OHL-S-2.0**.
+Hardware designs, schematics, CAD files, and documentation are licensed under the **CERN-OHL-S-2.0** (CERN Open Hardware Licence v2 - Strongly Reciprocal).
