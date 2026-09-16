@@ -10,7 +10,7 @@ I wanted to build something that was actually challenging instead of just puttin
 
 ## About me
 
-I'm **phantom&ascii**, a student interested in hardware, Linux, programming and CAD. I've worked on smaller PCB and hardware projects before, but GenesisX is a much bigger step up.
+I'm **phantom-ascii**, a student interested in hardware, Linux, programming and CAD. I've worked on smaller PCB and hardware projects before, but GenesisX is a much bigger step up.
 
 One of my longer-term goals is to become a **Hack Club Gappie**, and I'm using projects like this to build up the skills and experience to get there.
 
